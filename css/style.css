@@ -1,0 +1,65 @@
+
+
+
+body {
+  width:1240px;
+}
+header {
+  height: 100px;
+  display: flex;
+}
+
+.nav a{
+display: flex;
+justify-content: center;
+font-weight: 800px;
+color: red;
+text-decoration: none;
+display: inline;
+text-align: center;
+font-size: 16px;
+}
+
+
+.logo {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.shoppingcart {
+  height: 5px;
+  width: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.hero-banner {
+  background-image: url(../images/banner-girl.png),
+                    url(../images/flower-bkgd.jpg);
+  opacity: 0.8;
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: 12%, 65%;
+  transform: translate(0.-20px);  
+
+}
+
+
+p {
+  text-align: center;
+  color: white;
+  padding:150px 45px 0px 45px;
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 90px;
+  padding: 0px 45px 150px 45px;
+  margin:0px
+
+}
