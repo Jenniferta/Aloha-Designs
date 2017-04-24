@@ -305,6 +305,7 @@ font-style: normal;
   height: 1000px;
   display: flex;
   flex-direction: column;
+
 }
 
 .shop-categories a{
@@ -314,8 +315,10 @@ font-style: normal;
   color: white;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  
 }
-
 
 .mens-category{
   background:linear-gradient(180deg,rgba(0,0,0,.2) 0,rgba(0,0,0,.2)),
@@ -335,9 +338,9 @@ font-style: normal;
 }
 
 .square-categories{
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  
+
 }
 
 .trends-category{
