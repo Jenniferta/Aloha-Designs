@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="lib/flickity/flickity.min.css">
     <script src="https://use.fontawesome.com/90f704d235.js"></script>
-    <script src="lib/flickity/flickity.min.css"></script>
+
   </head>
 
 <body>
-  
-  
   <header>
     <div class="header-images">
-      <div id="logo">
+      <div class="logo">
         <img src="images/aloha-logo.svg" alt="aloha logo"> 
        </div>
-      <div id="cart">
+      <div class="cart">
         <img src="images/cart-icon.svg" alt="shopping cart image">
       </div>
     </div>  
 
     <nav class="navigation-bar">
-      <ul>
-          <li><a href="#">about</a></li>
+      <ul class="list">
+          <li><a href="#about">about</a></li>
           <li><a href="#">shop</a></li>
           <li><a href="#">featured</a></li>
           <li><a href="#">updates</a></li> 
@@ -40,10 +39,9 @@
     </section>    
 
 
-    <section class="about">
-      <div class="container-header">
-  
-          <h1>Hand-Crafted <span class="bold-h1"> Styles </span> 
+    <section class="about" id="about">
+      <div class="about-header">
+          <h1>Hand-Crafted <span class="bold"> Styles </span> 
           </h1>
       
         <p>Aloha Apparel CO. Sells only the finest ready-to-travel clothing. Browse our 
@@ -51,41 +49,55 @@
       </div>
     </section>
 
-  
     <section class="shop-categories">
-      <div class="rectangle-categories">
-          <div class="mens-category">
-            <a href="https://google.com">Men's</a>
-          </div>
+      <ul class= "cat">
+        <li class="rectangle cat-mens"><a href="#">Men's</a></li>
+      
+        <li class="square cat-trends"><a href="#">Trend's</a></li>
 
-          <div class="womens-category">
-            <a href="https://google.com">Women's</a>
-          </div>
-      </div>
+        <li class="square cat-glasses"><a href="#">Glasses</a></li>
 
-      <div class="square-categories">
-        <div class="trends-category">
-          <a href="https://google.com">Trend's</a>
-        </div>
+        <li class="square cat-sale"><a href="#">Sale</a></li>
 
-        <div class="glasses-category">
-          <a href="https://google.com">Glasses</a>
-        </div>
-        <div class="sale-category">
-          <a href="https://google.com">Sale</a>
-        </div>
-        <div class="bags-category">
-          <a href="https://google.com">Bags</a>
-        </div>
-      </div>
+        <li class="square cat-bags"><a href="#">Bags</a></li>
+
+        <li class="rectangle cat-womens"><a href="#">Women's</a></li>
+      </ul>
     </section>
     
+<section class="products">
+  <h2>Most-Loved <span class="bold">Products</span></h2>
 
-    <div class="Featured">
-      <h2>
-        <em>Most-Loved</em> <strong>Products</strong>
-      </h2>
-        <ul>
+  <div class="main-carousel">
+    
+    <div class="carousel-cell" >  
+      <div><img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
+          <p>DRESSES</p>
+          <h3>Checked Stretch Dress</h3>
+          <p>$129.00</p></div>
+    </div>
+    <div class="carousel-cell">
+      <div><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
+            <p>BAGS</p>
+            <h3>Blue Hipster Backpack</h3>
+            <p>$69.00</p></div>
+      </div>
+    <div class="carousel-cell"> 
+       <div> <img src="images/demin-overall-shorts.jpg" alt="denim overall shorts">
+              <p>DEMIN</p>
+              <h3>Demin Overall Shorts</h3>
+              <p>$89.00</p></div>
+    </div>
+    <div class="carousel-cell"> 
+        <div> <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
+              <p>DRESSES</p>
+              <h3>Pink Dotted Dress</h3>
+              <p>$99.00</p> </div>
+      </div>
+  </div>
+</section>
+
+        <!--<ul>
           <li>
             <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
             <p>DRESSES</p>
@@ -110,21 +122,18 @@
             <h2>Pink Dotted Dress</h2>
             <p>$99.00</p>
           </li>
-        </ul>
-    </div>
-  
-
-    <div class="Updates">  
-      <h2>
-        <em>Sign-up for </em><strong>Updates</strong>
-      </h2>
-
-      <p>Stay updated on our latest product releases, be first to find out upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+        </ul>-->
+    <section class="Updates">  
+        <h2>Sign-up for <span class="bold">Updates</span></h2>
+      
+      <div class="update-text">
+        <p>Stay updated on our latest product releases, be first to find out upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+      </div>
 
       <form> 
-        Email: <input type="text" email="email"><button>subscribe</button>
+        <input type="text" email="email"><button>subscribe</button>
       </form>
-    </div>
+    </section>
 
 
 
@@ -138,6 +147,10 @@
     1490 W Broadway Vancouver, BC, Canada </p>
     </div>
 
+
+
+<i class="fa fa-facebook" aria-hidden="true"></i>
+
     <div class="socialmedia">
       <ul>
         <li><a href="https://facebook.com">Facebook</a></li>
@@ -150,9 +163,9 @@
   </div>
 
 </footer>
-<script src="js/script.js"></script>
-<script src="lib/flickity/flickity.pkgd.min.js"></script>
 <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="lib/flickity/flickity.pkgd.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
 
