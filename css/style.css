@@ -581,6 +581,7 @@ input[type=submit] {
   border-top: solid;
   border-width: 0.5rem;
   border-color: white;
+ 
 }
 
 .footer-info p {
@@ -604,7 +605,6 @@ input[type=submit] {
 
 .address p {
   padding-bottom: 0.5rem;
-  padding-left:10%;
   color: #969696
 }
 
@@ -617,9 +617,19 @@ input[type=submit] {
   color: #FFF
 }
 
+.socialmedia-p{
+  visibility: hidden;
+
+}
 .socialmedia {
-  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
   padding-bottom: 1.5rem;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+
 }
 
 .socialmedia i {
@@ -627,6 +637,11 @@ input[type=submit] {
 }
 
 @media all and (min-width: 600px) { 
+
+* { 
+  font-size: 16px;
+
+}
 
 .header-container{
   background-color: white;
@@ -845,6 +860,10 @@ cat{
   text-align: left;
 }
 
+.address{
+  padding-left: 10%;
+}
+
 .socialmedia {
   display: flex;
   flex-direction: column;
@@ -856,6 +875,7 @@ cat{
   font-size: 1rem;
 }
 .socialmedia-text{
+  visibility: visible;
   display: flex;
   flex-direction: row;
 }
