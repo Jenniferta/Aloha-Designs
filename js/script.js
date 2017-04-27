@@ -1,8 +1,5 @@
 $(function() {
 
-
-//Code Here//
-
 //Flickity Slider//
 
 $('.main-carousel').flickity({
@@ -11,6 +8,8 @@ $('.main-carousel').flickity({
   contain: true,
   autoPlay: true,
 });
+
+
 
 
 
