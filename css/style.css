@@ -175,7 +175,7 @@ p {
 }
 
 
-.header-class{
+.header{
   background-color: white;
   display: flex;
   flex-wrap: wrap;
@@ -189,7 +189,6 @@ p {
   flex-wrap: wrap;
   width: 100%;
 }
-
 
 
 .logo img{
